@@ -1,0 +1,102 @@
+name: ClearDebt
+options:
+  bundleIdPrefix: com.appfactory
+  developmentLanguage: en
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+
+packages:
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios
+    from: 4.31.0
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: 11.0.0
+  FacebookSDK:
+    url: https://github.com/facebook/facebook-ios-sdk
+    from: 17.0.0
+
+targets:
+  ClearDebt:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [ClearDebt]
+
+    dependencies:
+      - package: RevenueCat
+        product: RevenueCat
+      - package: Firebase
+        product: FirebaseAnalytics
+      - package: FacebookSDK
+        product: FacebookCore
+
+    settings:
+      base:
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: "YOUR_TEAM_ID"
+        CODE_SIGN_STYLE: Automatic
+        PRODUCT_BUNDLE_IDENTIFIER: com.appfactory.cleardebt
+        INFOPLIST_FILE: ClearDebt/Info.plist
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MACCATALYST: false
+
+      configurations:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG]
+          OTHER_SWIFT_FLAGS: [-DDEBUG]
+        Release:
+          SWIFT_COMPILATION_MODE: wholemodule
+          SWIFT_OPTIMIZATION_LEVEL: -O
+
+    info:
+      path: ClearDebt/Info.plist
+
+    entitlements:
+      path: ClearDebt/ClearDebt.entitlements
+
+  ClearDebtTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [ClearDebtTests]
+
+    dependencies:
+      - target: ClearDebt
+
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.appfactory.cleardebt.tests
+        IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: "YOUR_TEAM_ID"
+        GENERATE_INFOPLIST_FILE: true
+
+      configurations:
+        Debug:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG]
+          OTHER_SWIFT_FLAGS: [-DDEBUG]
+
+schemes:
+  ClearDebt:
+    build:
+      targets:
+        ClearDebt: all
+        ClearDebtTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ClearDebtTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

@@ -1,0 +1,28 @@
+# Xcode
+*.xcuserstate
+*.xcscmblueprint
+xcuserdata/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods
+Pods/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Other
+.DS_Store
+*.pem
+*.p12
+*.mobileprovision

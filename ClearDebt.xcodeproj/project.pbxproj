@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BB23E793FA3206AF6A03C7D /* DebtListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9752BF51359209CDFCF7A40 /* DebtListViewModel.swift */; };
+		13A922320E5B4B1570700DE5 /* MilestonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA939394E28EB75414E1C2C9 /* MilestonesView.swift */; };
+		1C1AEB25B7AC9919DE3D06A5 /* PayoffTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9324C21A96D5A4EFF71C6AE /* PayoffTimelineView.swift */; };
+		204CA672A7E3819633C366B6 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 90FD54EF1523CB2F3736DAB4 /* FacebookCore */; };
+		231807A6E80A6A2A6B3D9067 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA534A75820120E7C939D6E /* Budget.swift */; };
+		2551BC2E2C7868CFF6316D38 /* ClearDebtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18577E65E4A080980D556CA /* ClearDebtApp.swift */; };
+		2615E1C7F7C4D5752825E52C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747BF814C859D731D6E5495D /* OnboardingView.swift */; };
+		2E3E971A574ED94EE79A7FE3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60DAB03B70403BE9008BBDE /* NotificationManager.swift */; };
+		36F76705ED8DB55953C323DC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D75174412867F149891DCCD7 /* FirebaseAnalytics */; };
+		407CAEB0D6381334D764D40A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44F26151CFC4484F3829A538 /* GoogleService-Info.plist */; };
+		436F0EFE117F41D63DD43DD2 /* PayoffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ED6972E75300025BD7151 /* PayoffViewModel.swift */; };
+		4A452CBD5326EF4B84AC7941 /* PayoffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF0083BA27F664042C17CE /* PayoffCalculator.swift */; };
+		4BBC01241233D0D8B52BCEFA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3C3E91DD57221737B9272A /* SettingsView.swift */; };
+		5682260A318AA53BAD1F0D67 /* PayoffPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C2A621F16A6AE70023DF08 /* PayoffPlanView.swift */; };
+		57249E469C2A74E30637EAC1 /* DebtListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED76A1A7ED3ECE04CF7C13D /* DebtListView.swift */; };
+		63711B2CAECD814DF597BED0 /* StatCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962E83D6298D4594EC04C2C6 /* StatCardView.swift */; };
+		6A2CA3128E1E15E3728476B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35965543E04F77EDA0491A7 /* Assets.xcassets */; };
+		6B83E2371353DE1FB48D4FF5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03219B98DE7626ED28538807 /* ContentView.swift */; };
+		6FA2823A5D4AE0241E251874 /* PaymentRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350D54FBFF61F7F1D9580021 /* PaymentRecord.swift */; };
+		78FBD736FF7DB485155DA59E /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC30B9B26CDFA03A2488527 /* BudgetViewModel.swift */; };
+		7FDA246D69C6ABF8BD984101 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F8E3E40C6D1C74366E52CE /* Debt.swift */; };
+		85E9BA1FF4F84D0EB67CCA46 /* DebtCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0C7D8C839F00331EFD0A31 /* DebtCardView.swift */; };
+		974C33CE15B0CA440CB744C4 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 8DE7E1709803A04CCF909D4C /* RevenueCat */; };
+		9ECAA8092752090DFBA83BD2 /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F5F90906F2B4DCF97E23F /* AnalyticsService.swift */; };
+		9FD4C87B4315D864B9053E6A /* PremiumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF416F44F7D8AC146BA0680B /* PremiumManager.swift */; };
+		A22DA94D3C840E41CD39B82B /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0FBCA48AE995686C114E91 /* Milestone.swift */; };
+		AE886255B2F980D8EEB852CC /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5DE756B7F2F432F4DD755 /* BudgetView.swift */; };
+		C1F419850C84BF9BB04A06CD /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CC12FD3D1407DD52DB2A43 /* CurrencyTextField.swift */; };
+		CD71DCD5FEEAD83B908FDF0D /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13631EAB0CA39DA334678852 /* StoreKitManager.swift */; };
+		DBE50CA0DDB4E5830188DD04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019A1F80F82E530250F4B8F9 /* HomeView.swift */; };
+		EAEF9CA6C0E06CA0A1BEDC72 /* AddDebtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5980410281F94E1E1F4CEFE8 /* AddDebtView.swift */; };
+		F24228FBE6921AD72A3597DD /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE84FF3FB4ED68B0F6F8457 /* PaywallView.swift */; };
+		F77CE43E4C893B92B7CC1ED0 /* MilestoneTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7027DCDC85EE42BBA1A650 /* MilestoneTracker.swift */; };
+		F895E945960AB09AC9132BC7 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6205282313F6C3BE7B1DC60E /* ProgressRingView.swift */; };
+		FBEED9C218659577B3D844C7 /* PayoffPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5AA0DC2FC2AAEF4E3BBA1 /* PayoffPlan.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7E9F362E94506BA955357BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F69F9696EF6ED80571FF7A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EBFC62E619C8D2C1E4F933B;
+			remoteInfo = ClearDebt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		019A1F80F82E530250F4B8F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		03219B98DE7626ED28538807 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0575DDDED85E0DA21138A144 /* ClearDebt.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClearDebt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09A5AA0DC2FC2AAEF4E3BBA1 /* PayoffPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoffPlan.swift; sourceTree = "<group>"; };
+		13631EAB0CA39DA334678852 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		1C6ED6972E75300025BD7151 /* PayoffViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoffViewModel.swift; sourceTree = "<group>"; };
+		22A5DE756B7F2F432F4DD755 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		2BF1EE5C168CF152664DC3C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33F8E3E40C6D1C74366E52CE /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		350D54FBFF61F7F1D9580021 /* PaymentRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentRecord.swift; sourceTree = "<group>"; };
+		44F26151CFC4484F3829A538 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C3C3E91DD57221737B9272A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		551F5F90906F2B4DCF97E23F /* AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		5980410281F94E1E1F4CEFE8 /* AddDebtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDebtView.swift; sourceTree = "<group>"; };
+		6205282313F6C3BE7B1DC60E /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		6CEADD3E96BC515A01E7F1E9 /* ClearDebt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClearDebt.entitlements; sourceTree = "<group>"; };
+		747BF814C859D731D6E5495D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		77C2A621F16A6AE70023DF08 /* PayoffPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoffPlanView.swift; sourceTree = "<group>"; };
+		7C0FBCA48AE995686C114E91 /* Milestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
+		7CC30B9B26CDFA03A2488527 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		7D0C7D8C839F00331EFD0A31 /* DebtCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtCardView.swift; sourceTree = "<group>"; };
+		7EA534A75820120E7C939D6E /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		8DE84FF3FB4ED68B0F6F8457 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		8ED76A1A7ED3ECE04CF7C13D /* DebtListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtListView.swift; sourceTree = "<group>"; };
+		90CC12FD3D1407DD52DB2A43 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		962E83D6298D4594EC04C2C6 /* StatCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatCardView.swift; sourceTree = "<group>"; };
+		A60DAB03B70403BE9008BBDE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B18577E65E4A080980D556CA /* ClearDebtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearDebtApp.swift; sourceTree = "<group>"; };
+		BA939394E28EB75414E1C2C9 /* MilestonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestonesView.swift; sourceTree = "<group>"; };
+		BD2A3C7D29CA792B278A4B77 /* ClearDebtTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClearDebtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDBF0083BA27F664042C17CE /* PayoffCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoffCalculator.swift; sourceTree = "<group>"; };
+		C35965543E04F77EDA0491A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C9752BF51359209CDFCF7A40 /* DebtListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtListViewModel.swift; sourceTree = "<group>"; };
+		EC7027DCDC85EE42BBA1A650 /* MilestoneTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilestoneTracker.swift; sourceTree = "<group>"; };
+		F9324C21A96D5A4EFF71C6AE /* PayoffTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayoffTimelineView.swift; sourceTree = "<group>"; };
+		FF416F44F7D8AC146BA0680B /* PremiumManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45C70E800C9D6189A660BB00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				974C33CE15B0CA440CB744C4 /* RevenueCat in Frameworks */,
+				36F76705ED8DB55953C323DC /* FirebaseAnalytics in Frameworks */,
+				204CA672A7E3819633C366B6 /* FacebookCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E9F4FB861F484E2598331E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				551F5F90906F2B4DCF97E23F /* AnalyticsService.swift */,
+				EC7027DCDC85EE42BBA1A650 /* MilestoneTracker.swift */,
+				A60DAB03B70403BE9008BBDE /* NotificationManager.swift */,
+				BDBF0083BA27F664042C17CE /* PayoffCalculator.swift */,
+				13631EAB0CA39DA334678852 /* StoreKitManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0E80D3D30D5575291E84CB52 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7CC30B9B26CDFA03A2488527 /* BudgetViewModel.swift */,
+				C9752BF51359209CDFCF7A40 /* DebtListViewModel.swift */,
+				1C6ED6972E75300025BD7151 /* PayoffViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1B80A0F097AC80B989BDDDEA /* ClearDebt */ = {
+			isa = PBXGroup;
+			children = (
+				C35965543E04F77EDA0491A7 /* Assets.xcassets */,
+				6CEADD3E96BC515A01E7F1E9 /* ClearDebt.entitlements */,
+				B18577E65E4A080980D556CA /* ClearDebtApp.swift */,
+				03219B98DE7626ED28538807 /* ContentView.swift */,
+				44F26151CFC4484F3829A538 /* GoogleService-Info.plist */,
+				2BF1EE5C168CF152664DC3C0 /* Info.plist */,
+				FF416F44F7D8AC146BA0680B /* PremiumManager.swift */,
+				589BBA020482E3EB54CA579C /* Models */,
+				08E9F4FB861F484E2598331E /* Services */,
+				0E80D3D30D5575291E84CB52 /* ViewModels */,
+				C924362D110C86B81FE9CECF /* Views */,
+			);
+			path = ClearDebt;
+			sourceTree = "<group>";
+		};
+		4E058A297ECF1E0ACFB1F1B5 /* ClearDebtTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClearDebtTests;
+			sourceTree = "<group>";
+		};
+		589BBA020482E3EB54CA579C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EA534A75820120E7C939D6E /* Budget.swift */,
+				33F8E3E40C6D1C74366E52CE /* Debt.swift */,
+				7C0FBCA48AE995686C114E91 /* Milestone.swift */,
+				350D54FBFF61F7F1D9580021 /* PaymentRecord.swift */,
+				09A5AA0DC2FC2AAEF4E3BBA1 /* PayoffPlan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74B1ED4562FBC3751B324BBA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				90CC12FD3D1407DD52DB2A43 /* CurrencyTextField.swift */,
+				7D0C7D8C839F00331EFD0A31 /* DebtCardView.swift */,
+				6205282313F6C3BE7B1DC60E /* ProgressRingView.swift */,
+				962E83D6298D4594EC04C2C6 /* StatCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		91830C9E21572D8955B6DBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0575DDDED85E0DA21138A144 /* ClearDebt.app */,
+				BD2A3C7D29CA792B278A4B77 /* ClearDebtTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C924362D110C86B81FE9CECF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5980410281F94E1E1F4CEFE8 /* AddDebtView.swift */,
+				22A5DE756B7F2F432F4DD755 /* BudgetView.swift */,
+				8ED76A1A7ED3ECE04CF7C13D /* DebtListView.swift */,
+				019A1F80F82E530250F4B8F9 /* HomeView.swift */,
+				BA939394E28EB75414E1C2C9 /* MilestonesView.swift */,
+				747BF814C859D731D6E5495D /* OnboardingView.swift */,
+				77C2A621F16A6AE70023DF08 /* PayoffPlanView.swift */,
+				F9324C21A96D5A4EFF71C6AE /* PayoffTimelineView.swift */,
+				8DE84FF3FB4ED68B0F6F8457 /* PaywallView.swift */,
+				4C3C3E91DD57221737B9272A /* SettingsView.swift */,
+				74B1ED4562FBC3751B324BBA /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4262E8DCBCB5F4AD27962F5 = {
+			isa = PBXGroup;
+			children = (
+				1B80A0F097AC80B989BDDDEA /* ClearDebt */,
+				4E058A297ECF1E0ACFB1F1B5 /* ClearDebtTests */,
+				91830C9E21572D8955B6DBBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3818AB677C8A6B8FAA69E915 /* ClearDebtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2F86E6F5FACBA4F070AC373 /* Build configuration list for PBXNativeTarget "ClearDebtTests" */;
+			buildPhases = (
+				234290B19DE8F60D3716306F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E285A8836A90335F331117EA /* PBXTargetDependency */,
+			);
+			name = ClearDebtTests;
+			packageProductDependencies = (
+			);
+			productName = ClearDebtTests;
+			productReference = BD2A3C7D29CA792B278A4B77 /* ClearDebtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EBFC62E619C8D2C1E4F933B /* ClearDebt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89D9D85713B255CF840FD66C /* Build configuration list for PBXNativeTarget "ClearDebt" */;
+			buildPhases = (
+				D1D3953A230EC9A84C2BE210 /* Sources */,
+				094C29E0A231DFA86E91981A /* Resources */,
+				45C70E800C9D6189A660BB00 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClearDebt;
+			packageProductDependencies = (
+				8DE7E1709803A04CCF909D4C /* RevenueCat */,
+				D75174412867F149891DCCD7 /* FirebaseAnalytics */,
+				90FD54EF1523CB2F3736DAB4 /* FacebookCore */,
+			);
+			productName = ClearDebt;
+			productReference = 0575DDDED85E0DA21138A144 /* ClearDebt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69F9696EF6ED80571FF7A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3818AB677C8A6B8FAA69E915 = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+					4EBFC62E619C8D2C1E4F933B = {
+						DevelopmentTeam = YOUR_TEAM_ID;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2BE9780BFC7D76A7010135C5 /* Build configuration list for PBXProject "ClearDebt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F4262E8DCBCB5F4AD27962F5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				08A1D0B1E362D63490434661 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				1DAF5B1BCF1C33EDF1E5EB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4A2385D50C2834B18059CD30 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EBFC62E619C8D2C1E4F933B /* ClearDebt */,
+				3818AB677C8A6B8FAA69E915 /* ClearDebtTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		094C29E0A231DFA86E91981A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2CA3128E1E15E3728476B3 /* Assets.xcassets in Resources */,
+				407CAEB0D6381334D764D40A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		234290B19DE8F60D3716306F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D3953A230EC9A84C2BE210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAEF9CA6C0E06CA0A1BEDC72 /* AddDebtView.swift in Sources */,
+				9ECAA8092752090DFBA83BD2 /* AnalyticsService.swift in Sources */,
+				231807A6E80A6A2A6B3D9067 /* Budget.swift in Sources */,
+				AE886255B2F980D8EEB852CC /* BudgetView.swift in Sources */,
+				78FBD736FF7DB485155DA59E /* BudgetViewModel.swift in Sources */,
+				2551BC2E2C7868CFF6316D38 /* ClearDebtApp.swift in Sources */,
+				6B83E2371353DE1FB48D4FF5 /* ContentView.swift in Sources */,
+				C1F419850C84BF9BB04A06CD /* CurrencyTextField.swift in Sources */,
+				7FDA246D69C6ABF8BD984101 /* Debt.swift in Sources */,
+				85E9BA1FF4F84D0EB67CCA46 /* DebtCardView.swift in Sources */,
+				57249E469C2A74E30637EAC1 /* DebtListView.swift in Sources */,
+				0BB23E793FA3206AF6A03C7D /* DebtListViewModel.swift in Sources */,
+				DBE50CA0DDB4E5830188DD04 /* HomeView.swift in Sources */,
+				A22DA94D3C840E41CD39B82B /* Milestone.swift in Sources */,
+				F77CE43E4C893B92B7CC1ED0 /* MilestoneTracker.swift in Sources */,
+				13A922320E5B4B1570700DE5 /* MilestonesView.swift in Sources */,
+				2E3E971A574ED94EE79A7FE3 /* NotificationManager.swift in Sources */,
+				2615E1C7F7C4D5752825E52C /* OnboardingView.swift in Sources */,
+				6FA2823A5D4AE0241E251874 /* PaymentRecord.swift in Sources */,
+				4A452CBD5326EF4B84AC7941 /* PayoffCalculator.swift in Sources */,
+				FBEED9C218659577B3D844C7 /* PayoffPlan.swift in Sources */,
+				5682260A318AA53BAD1F0D67 /* PayoffPlanView.swift in Sources */,
+				1C1AEB25B7AC9919DE3D06A5 /* PayoffTimelineView.swift in Sources */,
+				436F0EFE117F41D63DD43DD2 /* PayoffViewModel.swift in Sources */,
+				F24228FBE6921AD72A3597DD /* PaywallView.swift in Sources */,
+				9FD4C87B4315D864B9053E6A /* PremiumManager.swift in Sources */,
+				F895E945960AB09AC9132BC7 /* ProgressRingView.swift in Sources */,
+				4BBC01241233D0D8B52BCEFA /* SettingsView.swift in Sources */,
+				63711B2CAECD814DF597BED0 /* StatCardView.swift in Sources */,
+				CD71DCD5FEEAD83B908FDF0D /* StoreKitManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E285A8836A90335F331117EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EBFC62E619C8D2C1E4F933B /* ClearDebt */;
+			targetProxy = E7E9F362E94506BA955357BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		578591A3B10D8081477C8EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		74F6C63C9E2600DBA25B2AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.cleardebt.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearDebt.app/ClearDebt";
+			};
+			name = Debug;
+		};
+		7F80890A18C60B96C3124C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.cleardebt.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClearDebt.app/ClearDebt";
+			};
+			name = Release;
+		};
+		C54B0873C0F84756151C6BFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClearDebt/ClearDebt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = ClearDebt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.cleardebt;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DC85C5CBE0AE42DD9C41E4D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8B74CCE5B29ECFC02E771A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ClearDebt/ClearDebt.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YOUR_TEAM_ID;
+				INFOPLIST_FILE = ClearDebt/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appfactory.cleardebt;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BE9780BFC7D76A7010135C5 /* Build configuration list for PBXProject "ClearDebt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				578591A3B10D8081477C8EB2 /* Debug */,
+				DC85C5CBE0AE42DD9C41E4D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		89D9D85713B255CF840FD66C /* Build configuration list for PBXNativeTarget "ClearDebt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54B0873C0F84756151C6BFF /* Debug */,
+				F8B74CCE5B29ECFC02E771A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A2F86E6F5FACBA4F070AC373 /* Build configuration list for PBXNativeTarget "ClearDebtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F6C63C9E2600DBA25B2AE7 /* Debug */,
+				7F80890A18C60B96C3124C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08A1D0B1E362D63490434661 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 17.0.0;
+			};
+		};
+		1DAF5B1BCF1C33EDF1E5EB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		4A2385D50C2834B18059CD30 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.31.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DE7E1709803A04CCF909D4C /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A2385D50C2834B18059CD30 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		90FD54EF1523CB2F3736DAB4 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08A1D0B1E362D63490434661 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		D75174412867F149891DCCD7 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DAF5B1BCF1C33EDF1E5EB28 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F69F9696EF6ED80571FF7A9A /* Project object */;
+}
